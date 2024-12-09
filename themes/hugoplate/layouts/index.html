@@ -4,29 +4,35 @@
     <section class="section pt-14">
       <div class="container">
         <div class="row justify-center">
-          <div class="lg:col-7 md:col-9 mb-8 text-center">
+          <div class="lg:col-7 md:col-9 mb-4 text-center">
             <h1 class="mb-4 text-h3 lg:text-h1">
               {{ .title | markdownify }}
             </h1>
-            <p class="mb-8">
+            <h1 class="mb-4 text-h3 lg:text-h2">
+              {{ .title2 | markdownify }}
+            </h1>
+            <!-- <p class="mb-8">
               {{ .content | markdownify }}
-            </p>
+            </p> -->
+          </div>
+          <div class="col-12 mb-12">
+            {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto lg:!max-w-[600px]" "DisplayXL" "600x" ) }}
+          </div>
+          <div class="text-center">
             {{ with .button }}
               {{ if .enable }}
                 <a
-                  class="btn btn-primary"
+                  class="btn btn-primary scale-150"
                   href="{{ .link | absURL }}"
                   {{ if strings.HasPrefix .link `http` }}
                     target="_blank" rel="noopener"
                   {{ end }}>
                   {{ .label }}
-                  <i class="fa fa-arrow-right pl-2"></i>
+                  &nbsp;
+                  <i class="fa fa-arrow-left"></i>
                 </a>
               {{ end }}
             {{ end }}
-          </div>
-          <div class="col-12">
-            {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto lg:!max-w-[800px]" "DisplayXL" "800x" ) }}
           </div>
         </div>
       </div>
