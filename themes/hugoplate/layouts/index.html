@@ -4,7 +4,7 @@
     <section class="section pt-14">
       <div class="container">
         <div class="row justify-center">
-          <div class="lg:col-7 md:col-9 mb-4 text-center">
+          <div class="lg:col-12 md:col-12 mb-4 text-center">
             <h1 class="mb-4 text-h3 lg:text-h1">
               {{ .title | markdownify }}
             </h1>
@@ -16,7 +16,7 @@
             </p> -->
           </div>
           <div class="col-12 mb-12">
-            {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto lg:!max-w-[800px]" "DisplayXL" "800x" ) }}
+            {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto lg:!max-w-[700px] md:!max-w-[700px]" "DisplayXL" "700x" ) }}
           </div>
           <div class="text-center">
             {{ with .button }}
@@ -42,7 +42,7 @@
 
   <!-- Features -->
   {{ range $i, $e:= .Params.features }}
-    <section class="section-sm {{ if (modBool $i 2) }}bg-gradient{{ end }}">
+    <section class="section-sm bg-gradient">
       <div class="container">
         <div class="row items-center justify-between">
           <div
@@ -55,17 +55,19 @@
             class="{{ if not (modBool $i 2) }}
               md:order-1
             {{ end }} md:col-7 lg:col-6">
-            <h2 class="mb-4">
+            <h4 class="mb-4">
               {{ .title | markdownify }}
-            </h2>
+            </h4>
             <p class="mb-8 text-lg">
               {{ .content | markdownify }}
             </p>
             <ul>
               {{ range .bulletpoints }}
                 <li class="relative mb-4 pl-6">
-                  <i class="fa fa-check absolute left-0 top-1.5"></i>
+                  <i class="fa fa-check absolute right-0 top-1.5"></i>
+                  <p style="margin-right: 1.5em;">
                   {{ . | markdownify }}
+                  </p>
                 </li>
               {{ end }}
             </ul>

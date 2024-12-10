@@ -8,47 +8,67 @@ banner:
   button:
     enable: true
     label: "ثبت نام رایگان در مسابقه"
-    link: "#"
+    link: "https://ai.iums.ac.ir/AISContest"
 
 # Features
-# features:
-#   - title: "What's Included in Hugoplate"
-#     image: "/images/service-1.png"
-#     content: "Hugoplate is a comprehensive starter template that includes everything you need to get started with your Hugo project. What's Included in Hugoplate"
-#     bulletpoints:
-#       - "10+ Pre-build pages"
-#       - "95+ Google Pagespeed Score"
-#       - "Build with Hugo and TailwindCSS for easy and customizable styling"
-#       - "Fully responsive on all devices"
-#       - "SEO-optimized for better search engine rankings"
-#       - "**Open-source and free** for personal and commercial use"
-#     button:
-#       enable: false
-#       label: "Get Started Now"
-#       link: "#"
+features:
+  - title: "به مسابقه طبقه بندی مراحل خواب خوش آمدید!"
+    image: "/images/service-1.png"
+    content: "
+    <p class='mb-6 text-justify'>
+    مسابقه طبقه‌بندی مراحل خواب با استفاده از هوش مصنوعی فرصتی منحصربه‌فرد برای علاقه‌مندان به یادگیری ماشین و علوم داده است تا دانش و مهارت‌های خود را در یک چالش علمی واقعی به نمایش بگذارند. این رویداد با تمرکز بر تحلیل داده‌های خواب و طراحی الگوریتم‌های دقیق مرحله‌بندی خواب، بستری برای مشارکت در پیشرفت فناوری‌های مرتبط با علوم اعصاب و سلامت فراهم می‌کند.
+    </p>
+    <p class='mb-6 text-justify'>
+    خواب فرآیندی طبیعی و ضروری است که بدن برای استراحت و بازیابی انرژی به آن نیاز دارد. در طول خواب، مغز مراحل مختلفی را طی می‌کند که شامل بیداری (Wake - مرحله ۰)، خواب سبک (NREM1 - مرحله ۱)، خواب عمیق (NREM2 و NREM3 - مراحل ۲ و ۳) و خواب همراه با رویا (REM - مرحله ۴) است. هر یک از این مراحل نقش حیاتی در یادگیری، حافظه و سلامت عمومی دارند. هدف این مسابقه استفاده از داده‌های سیگنال‌های مغزی (EEG) ثبت‌شده از داخل گوش و طراحی الگوریتم‌های هوش مصنوعی است که بتوانند این مراحل را با دقت بالا تشخیص دهند.
+    </p>
+    <p class='mb-6 text-justify'>
+    داده‌های ارائه‌شده در این مسابقه به بازه‌های زمانی ۳۰ ثانیه‌ای تقسیم شده‌اند و هر بازه توسط متخصصین مربوطه به یکی از این مراحل خواب (۰ تا ۴) برچسب‌گذاری شده است. شرکت‌کنندگان وظیفه دارند با طراحی مدل‌های هوشمند و تحلیل این داده‌ها، الگوریتم‌هایی توسعه دهند که بتوانند مراحل خواب را با دقت بالا طبقه‌بندی کنند. 
+    </p>
+    <p class='mb-6 text-justify'>
+    این رویداد فرصتی عالی برای علاقه‌مندان به علوم داده، یادگیری ماشین، و کاربردهای آن در حوزه سلامت و پزشکی خواب فراهم می‌کند. مخاطبان این رویداد شامل دانشجویان، محققان و متخصصانی هستند که به موضوعات هوش مصنوعی، تحلیل داده و علوم اعصاب علاقه‌مندند.
+    </p>
+    <p class='mb-6 text-justify'>
+    شرکت در این مسابقه امکان یادگیری مفاهیم پیشرفته، مواجهه با چالش‌های واقعی و مشارکت در توسعه فناوری‌های نوین در حوزه سلامت و علوم اعصاب را برای شما فراهم می‌کند.
+    </p>
+    "
+    button:
+      enable: false
+      label: "Get Started Now"
+      link: "#"
 
-#   - title: "Discover the Key Features Of Hugo"
-#     image: "/images/service-2.png"
-#     content: "Hugo is an all-in-one web framework for building fast, content-focused websites. It offers a range of exciting features for developers and website creators. Some of the key features are:"
-#     bulletpoints:
-#       - "Zero JS, by default: No JavaScript runtime overhead to slow you down."
-#       - "Customizable: Tailwind, MDX, and 100+ other integrations to choose from."
-#       - "UI-agnostic: Supports React, Preact, Svelte, Vue, Solid, Lit and more."
-#     button:
-#       enable: true
-#       label: "Get Started Now"
-#       link: "https://github.com/zeon-studio/hugoplate"
+  - title: "توضیحات فنی داده‌ها:"
+    image: "/images/service-2.png"
+    content: ""
+    bulletpoints:
+      - "داده‌ها از پیش‌پردازش شده‌اند و ویژگی‌های طیفی (Spectrogram) آن‌ها محاسبه شده است."
+      - "ابعاد هر نمونه داده ورودی(بازه‌های ۳۰ ثانیه‌ای)، یك ماتریس دوبعدی ۵۹×۵۱ است."
+      - "پوشه داده‌ها (AISContest_Data)، دارای پنج پوشه است كه هریك شامل نمونه‌های مربوط به كلاس‌های NREM3, NREM2, NREM1, WAKE و REM است."
+    button:
+      enable: true
+      label: "دسترسی به داده های مسابقه"
+      link: "https://drive.google.com/file/d/1Y2cTYR_t_10NAbznspE5bBjuATPdTgtq"
 
-#   - title: "The Top Reasons to Choose Hugo for Your Hugo Project"
-#     image: "/images/service-3.png"
-#     content: "With Hugo, you can build modern and content-focused websites without sacrificing performance or ease of use."
-#     bulletpoints:
-#       - "Instantly load static sites for better user experience and SEO."
-#       - "Intuitive syntax and support for popular frameworks make learning and using Hugo a breeze."
-#       - "Use any front-end library or framework, or build custom components, for any project size."
-#       - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
-#     button:
-#       enable: false
-#       label: ""
-#       link: ""
+  - title: "مدل‌ها و الزامات:"
+    image: "/images/service-3.png"
+    content: ""
+    bulletpoints:
+      - "استفاده از مدل‌های پیش‌آموزش‌دیده (Pre-trained) آزاد است."
+      - "فرمت ذخیره مدل‌ها: h5 برای مدل‌های Keras/TensorFlow  و pth برای مدل‌های Pytorch"
+      - "فایل‌های نهایی باید شامل کد فایل notebook(ipynb) و مدل ذخیره‌شده باشند."
+    button:
+      enable: false
+      label: ""
+      link: ""
+      
+  - title: "نحوه ارزیابی مدل‌ها:"
+    image: "/images/service-4.png"
+    content: ""
+    bulletpoints:
+      - "ارزیابی مدل‌ها بر مبنای معیار  F1-Score با متد Micro صورت می‌پذیرد."
+    button:
+      enable: false
+      label: ""
+      link: ""
 ---
+
+hello

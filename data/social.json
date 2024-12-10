@@ -1,5 +1,22 @@
 {
   "main": [
-
+    {
+      "name": "github",
+      "icon": "fab fa-github",
+      "link": "https://github.com/AISContest",
+      "color": "black"
+    },
+    {
+      "name": "gmail",
+      "icon": "fab fa-google",
+      "link": "mailto:aisleepcontest@gmail.com",
+      "color": "#c71610"
+    },
+    {
+      "name": "telegram",
+      "icon": "fab fa-telegram",
+      "link": "#",
+      "color": "#24A1DE"
+    }
   ]
 }

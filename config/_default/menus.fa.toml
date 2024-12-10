@@ -2,6 +2,20 @@
 
 # main menu
 
+[[main]]
+name = "خانه"
+url = "/"
+weight = 1
+
+[[main]]
+name = "وبلاگ"
+url = "/blog"
+weight = 3
+
+#[[main]]
+#name = "درباره ما"
+#url = "/about"
+#weight = 6
 
 # footer menu
 

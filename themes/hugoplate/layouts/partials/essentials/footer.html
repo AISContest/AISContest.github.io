@@ -3,11 +3,35 @@
     <div class="row items-center py-6">
       <div class="row items-center py-6">
         <div class="flex flex-wrap justify-center">
-          <img src="/images/logo04.png" style="height: 8em; margin: .5em;">
-          <img src="/images/logo01.png" style="height: 8em; margin: .5em;">
-          <img src="/images/logo03.png" style="height: 8em; margin: .5em;">
-          <img src="/images/logo02.png" style="height: 8em; margin: .5em;">
+          <a href="https://www.sharif.edu">
+            <img src="/images/logo04.png" style="height: 8em; margin: .5em;">
+          </a>
+          <a href="https://www.aihcongress.com">
+            <img src="/images/logo01.png" style="height: 8em; margin: .5em;">
+          </a>
+          <a href="https://iums.ac.ir">
+            <img src="/images/logo03.png" style="height: 8em; margin: .5em;">
+          </a>
+          <a href="https://nbic.iums.ac.ir">
+            <img src="/images/logo02.png" style="height: 8em; margin: .5em;">
+          </a>
         </div>
+      </div>
+      <div class="row items-center py-6">
+        <ul class="social-icons flex justify-center">
+          {{ range site.Data.social.main }}
+            <li>
+              <a
+                target="_blank"
+                aria-label="{{ .name }}"
+                rel="nofollow noopener"
+                href="{{ .link | safeURL }}"
+                style="background-color: {{ .color }};">
+                <i class="{{ .icon }}"></i>
+              </a>
+            </li>
+          {{ end }}
+        </ul>
       </div>
     </div>
   </div>
