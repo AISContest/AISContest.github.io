@@ -28,8 +28,7 @@
                     target="_blank" rel="noopener"
                   {{ end }}>
                   {{ .label }}
-                  &nbsp;
-                  <i class="fa fa-arrow-left"></i>
+                  <i class="fa fa-arrow-left" style="vertical-align: text-bottom; margin-bottom: 4px; margin-right: 6px;"></i>
                 </a>
               {{ end }}
             {{ end }}
@@ -75,7 +74,7 @@
               {{ if .enable }}
                 <a class="btn btn-primary mt-6" href="{{ .link | absURL }}">
                   {{ .label }}
-                  <i class="fa fa-arrow-right pl-2"></i>
+                  <i class="fa fa-arrow-left" style="vertical-align: text-bottom; margin-bottom: 4px; margin-right: 6px;"></i>
                 </a>
               {{ end }}
             {{ end }}
