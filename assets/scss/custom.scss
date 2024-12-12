@@ -27,3 +27,8 @@ article .share-link{
 .social-icons li a:is(.dark *){
     background-color: white !important;
 }
+
+
+footer .container .row.items-center.py-6 {
+    --bs-gutter-x: 0rem;
+}
