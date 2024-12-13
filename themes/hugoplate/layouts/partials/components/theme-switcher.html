@@ -44,8 +44,29 @@
     if (localStorage.getItem("theme") === "dark"){darkMode = true}
     else if (localStorage.getItem("theme") === "light"){darkMode = false}
 
-    if (darkMode){document.documentElement.classList.add("dark")}
-    else {document.documentElement.classList.remove("dark")}
+    document.addEventListener('DOMContentLoaded', function() {
+      var flipdownElement = document.querySelector('#flipdown');
+
+      var data_btn = document.querySelector('#data_btn');
+      if (data_btn) {data_btn.style.display = 'none';}
+      var notebook_btn = document.querySelector('#notebook_btn');
+      if (notebook_btn) {notebook_btn.style.display = 'none';}
+
+      if (darkMode) {
+        document.documentElement.classList.add("dark");
+        if (flipdownElement) {
+          flipdownElement.classList.remove('flipdown__theme-dark');
+          flipdownElement.classList.add('flipdown__theme-light');
+        }
+      }
+      else {
+        document.documentElement.classList.remove("dark");
+        if (flipdownElement) {
+          flipdownElement.classList.remove('flipdown__theme-light');
+          flipdownElement.classList.add('flipdown__theme-dark');
+        }
+      }
+    });    
 
     // Show theme switcher after applying theme
     document.addEventListener("DOMContentLoaded", () => {
@@ -56,6 +77,10 @@
         ts.checked = darkMode;
         ts.addEventListener("click", () => {
           document.documentElement.classList.toggle("dark");
+
+          var flipdownElement = document.querySelector('#flipdown');
+          if (flipdownElement){flipdownElement.classList.toggle('flipdown__theme-light');}
+
           localStorage.setItem(
             "theme",
             document.documentElement.classList.contains("dark") ? "dark" : "light"
