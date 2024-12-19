@@ -5,7 +5,7 @@ title: "اجرای Jupyter Notebook در کامپیوتر شخصی"
 date: 2024-12-20T17:30:00Z
 image: "/images/jupyter.png"
 categories: ["راهنمای ابزارها"]
-author: "Fatemeh Elahi"
+author: "Ali Yazdanifar"
 tags: ["Jupyter", "آموزش", "Python"]
 draft: false
 ---
