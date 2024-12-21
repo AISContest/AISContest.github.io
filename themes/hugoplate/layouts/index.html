@@ -30,6 +30,7 @@
             {{ with .button }}
               {{ if .enable }}
                 <a
+                  id="{{ .id }}"
                   class="btn btn-primary scale-150"
                   href="{{ .link | absURL }}"
                   {{ if strings.HasPrefix .link `http` }}
@@ -47,22 +48,22 @@
           <div class="col-12 mt-8 text-center">
             <div id="flipdown" class="flipdown" style="margin: 0 auto;"></div>
             <h1 class="mt-4 text-h3">
-              تا زمان شروع دسترسی به داده ها
+              تا آخرین مهلت ثبت نام
             </h1>
             <script>
               document.addEventListener('DOMContentLoaded', () => {
 
-              var tehranTime = new Date(Date.UTC(2024, 11, 15, 0, 0, 0));
+              var tehranTime = new Date(Date.UTC(2024, 11, 29, 0, 0, 0));
               tehranTime.setHours(tehranTime.getHours() - 3);
               tehranTime.setMinutes(tehranTime.getMinutes() - 30);
 
               var flipdown = new FlipDown(tehranTime.getTime() / 1000)
                 .start()
                 .ifEnded(() => {
-                  var data_btn = document.querySelector('#data_btn');
-                  if (data_btn) {data_btn.style.display = 'inline-block';}
-                  var notebook_btn = document.querySelector('#notebook_btn');
-                  if (notebook_btn) {notebook_btn.style.display = 'inline-block';}
+                  var data_btn = document.querySelector('#register_btn');
+                  if (data_btn) {data_btn.style.display = 'none';}
+                  // var notebook_btn = document.querySelector('#notebook_btn');
+                  // if (notebook_btn) {notebook_btn.style.display = 'inline-block';}
                 });
               });
             </script>
@@ -107,6 +108,14 @@
             {{ with .button }}
               {{ if .enable }}
                 <a id="{{ .id }}" class="btn btn-primary mt-6" href="{{ .link | absURL }}" {{ .type }} target="_blank">
+                  {{ .label }}
+                  <i class="fa fa-arrow-left" style="vertical-align: text-bottom; margin-bottom: 4px; margin-right: 6px;"></i>
+                </a>
+              {{ end }}
+            {{ end }}
+            {{ with .button2 }}
+              {{ if .enable }}
+                <a id="{{ .id }}" class="btn btn-primary mt-2" href="{{ .link | absURL }}" {{ .type }}>
                   {{ .label }}
                   <i class="fa fa-arrow-left" style="vertical-align: text-bottom; margin-bottom: 4px; margin-right: 6px;"></i>
                 </a>

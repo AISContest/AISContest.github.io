@@ -9,6 +9,7 @@ banner:
   image2: "/images/timeline.png"
   button:
     enable: true
+    id: "register_btn"
     label: "ثبت نام رایگان در مسابقه"
     link: "https://ai.iums.ac.ir/AISContest"
 
@@ -66,6 +67,12 @@ features:
       type: "download"
       label: "دسترسی به نوتبوک مسابقه"
       link: "/files/AIS_Contest.ipynb"
+    button2:
+      enable: true
+      id: "submit_btn"
+      type: ""
+      label: "راهنمای ارسال نتایج مسابقه"
+      link: "/blog/send"
       
   - title: "نحوه ارزیابی مدل‌ها:"
     image: "/images/service-4.png"
@@ -76,15 +83,4 @@ features:
       enable: false
       label: ""
       link: ""
-
-  - title: "ارسال نتایج:"
-    content: ""
-    bulletpoints:
-      - "برای ارسال نتایج به وبلاگ مربوط به ارسال مراجعه کنید."
-    button:
-      enable: true
-      id: "submission_btn"
-      type: "link"
-      label: "ارسال نتایج"
-      link: "https://aiscontest.github.io/blog/send/"
 ---
