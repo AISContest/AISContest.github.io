@@ -77,3 +77,14 @@ features:
       label: ""
       link: ""
 ---
+
+  - title: "ارسال نتایج"
+    content: ""
+    bulletpoints:
+      - "برای ارسال نتایج به وبلاگ مربوط به ارسال مراجعه کنید."
+    button:
+      enable: true
+      id: "submission_btn"
+      type: "link"
+      label: "ارسال نتایج"
+      link: "[https://ai.iums.ac.ir/AISContest/Submission](https://aiscontest.github.io/blog/send/)"
