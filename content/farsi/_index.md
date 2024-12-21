@@ -77,5 +77,3 @@ features:
       label: ""
       link: ""
 ---
-
-hello
