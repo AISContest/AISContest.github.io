@@ -78,6 +78,7 @@ features:
       link: ""
 
   - title: "ارسال نتایج"
+  - image: ""
     content: ""
     bulletpoints:
       - "برای ارسال نتایج به وبلاگ مربوط به ارسال مراجعه کنید."
