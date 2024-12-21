@@ -3,7 +3,7 @@ title: "اجرای Jupyter Notebook در کامپیوتر شخصی"
 # meta_title: ""
 # description: ""
 date: 2024-12-20T17:30:00Z
-image: "/assest/images/jupyternotebook.jpg"
+image: "/images/jupyternotebook.jpg"
 categories: ["راهنمای ابزارها"]
 author: "Ali Yazdanifar"
 tags: ["Jupyter", "آموزش", "Python"]
