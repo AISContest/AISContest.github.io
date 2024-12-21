@@ -3,7 +3,7 @@ title: "ارسال فایل نهایی"
 # meta_title: ""
 # description: ""
 date: 2024-12-20T17:30:00Z
-image: "/image/send.jpg"
+image: "/images/send.jpg"
 categories: ["ارسال"]
 author: "Ali Yazdanifar"
 tags: ["ارسال", "مسابقه"]
