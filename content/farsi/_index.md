@@ -87,5 +87,5 @@ features:
       id: "submission_btn"
       type: "link"
       label: "ارسال نتایج"
-      link: "[https://ai.iums.ac.ir/AISContest/Submission](https://aiscontest.github.io/blog/send/)"
+      link: "https://aiscontest.github.io/blog/send/"
 ---
