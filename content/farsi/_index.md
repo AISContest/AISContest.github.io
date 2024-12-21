@@ -71,7 +71,7 @@ features:
     image: "/images/service-4.png"
     content: ""
     bulletpoints:
-      - "ارزیابی مدل‌ها بر مبنای معیار  F1-Score با متد Micro صورت می‌پذیرد."
+      - "ارزیابی مدل‌ها بر مبنای معیار  F1-Score با متد Macro صورت می‌پذیرد."
     button:
       enable: false
       label: ""
