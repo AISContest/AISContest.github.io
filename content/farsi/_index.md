@@ -76,7 +76,6 @@ features:
       enable: false
       label: ""
       link: ""
----
 
   - title: "ارسال نتایج"
     content: ""
@@ -88,3 +87,4 @@ features:
       type: "link"
       label: "ارسال نتایج"
       link: "[https://ai.iums.ac.ir/AISContest/Submission](https://aiscontest.github.io/blog/send/)"
+---
