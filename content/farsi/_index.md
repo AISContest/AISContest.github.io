@@ -10,8 +10,8 @@ banner:
   button:
     enable: true
     id: "register_btn"
-    label: "ثبت نام رایگان در مسابقه"
-    link: "https://ai.iums.ac.ir/AISContest"
+    label: "مشاهده نتایج مسابقه"
+    link: "/blog/winners"
 
 # Features
 features:
