@@ -2,7 +2,7 @@
 title: "اعلام نتایج مسابقه"
 # meta_title: ""
 # description: ""
-date: 2025-01-04T16:30:00Z
+date: 2025-01-04T11:30:00Z
 image: "/images/winners.png"
 categories: ["اعلام نتایج"]
 author: "Shadi Azizi"
